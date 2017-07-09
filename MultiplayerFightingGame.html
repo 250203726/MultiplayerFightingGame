@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MultiplayerFightingGame</title>
+<style>
+canvas{
+	border: 1px solid black;	
+	background-color: white;	
+}
+</style>
+</head>
+
+<body onLoad="init();">
+	<canvas id="canvas" width="700" height="400">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script type="application/javascript" language="javascript" src="js/MultiplayerFightingGame.js" ></script>
+    <br/>
+    <select id="size" onChange="changeSize()">
+    	<option value="10">small</option>
+        <option value="15">medium</option>
+        <option value="20" >big</option> 
+    </select>
+    power:<input type="number" id="velocity" value="35" min="0" max="100" step="1" />
+    angle:<input type="number" id="angle" value="39" min="0" max="90" step="1"/>
+    <input type="button" value="FIRE!" onClick="start()" />
+    
+</body>
+</html>
